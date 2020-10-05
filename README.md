@@ -1,9 +1,9 @@
 # liciousTask
 
 to run the project 
-1) start mongo db 
-2 ) run the command 
-mvn spring-boot:run
+1) start mongo db  
+2) run the command 
+	mvn spring-boot:run
 3) open the following link 
 http://localhost:8080/swagger-ui.html#/
 
