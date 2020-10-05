@@ -1,4 +1,4 @@
-package com.mongodb.starter;
+package com.userSegmant.starter;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,7 +22,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2).select()
-                                                      .apis(RequestHandlerSelectors.basePackage("com.mongodb.starter"))
+                                                      .apis(RequestHandlerSelectors.basePackage("com.userSegmant.starter"))
                                                       .paths(PathSelectors.any())
                                                       .build()
                                                       .apiInfo(info());
@@ -30,12 +30,6 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 
     private ApiInfo info() {
         return new ApiInfoBuilder().title("Quick start project")
-                                   .description("Quick start project using Java, Spring boot and MongoDB")
-                                   .contact(new Contact("Maxime Beugnet", "https://github.com/MaBeuLux88",
-                                                        "maxime.beugnet@gmail.com"))
-                                   .version("1.0.0")
-                                   .license("Apache License Version 2.0")
-                                   .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0\"")
                                    .build();
     }
 
